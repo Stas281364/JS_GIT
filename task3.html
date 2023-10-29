@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <script src="./js/arraysTask3.js"></script>
+    <script>
+        let mas = new Array();
+        let count = prompt("Введите рамзер массива");
+        for (var i=0; i<count; i++) mas[i]=parseInt(prompt(`Введите целое число ${i}:`, ""));
+
+        let result = task3(mas);
+        if (result == 0) {
+            alert("Есть нечётный элемент")
+        } else {
+            alert("Все элементы четкие")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <script src="./js/arraysTask5.js"></script>
+    <script>
+        let mas = new Array();
+        let count = prompt("Введите размер массива");
+        for (var i=0; i<count; i++) mas[i]=parseInt(prompt(`Введите целое число ${i}:`, ""));
+
+        let XfiveMas = task5(mas);
+        alert(`Сред знач: ${XfiveMas}`);
+    </script>
+</body>
+</html>
