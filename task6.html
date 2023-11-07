@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <script src="./js/arrayTask6.js"></script>
+    <script>
+        let mas = new Array();
+        let count = prompt("Введите размер массива");
+        for (var i=0; i<count; i++) mas[i]=parseInt(prompt(`Введите целое число ${i}:`, ""));
+
+        alert(`Массив: ${mas}`);
+        let result_mas = task6(mas);
+        
+        alert(`Новый массив: ${result_mas}`);
+    </script>
+</body>
+</html>
