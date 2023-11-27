@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="button" id="button_info"  value="Information">
+        
+        <br><br>
+
+        <textarea id="area" name="story" rows="5" cols="33">
+            It was a dark and stormy night...
+        </textarea>
+
+        <br><br>
+
+        <a href="./task10_Dom2.html">Next page</a>
+    </form>
+
+    <script>
+        
+        button_info.onclick = function() {
+            document.getElementById("area").value = navigator.userAgent.toLowerCase();
+        }
+    </script>
+    
+</body>
+</html>

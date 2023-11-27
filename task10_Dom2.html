@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+</head>
+<body>
+    <form >
+        <input type="button" id="button_InfoScreen"  value="Information">
+        
+        <br><br>
+
+        <label>
+            разрешение по ширине <input type="text" id="width_permission">
+        </label>
+        <br><br>
+        <label>
+            разрешение по высоте <input type="text" id="height_permission">
+        </label>
+        <br><br>
+        <label>
+            ширина рабочей области <input type="text" id="width_win">
+        </label>
+        <br><br>
+        <label>
+            высота рабочей области <input type="text" id="height_win">
+        </label>
+
+        <br><br>
+
+        <a href="./task10_Dom2.html">Next page</a> 
+        <br>
+        <a href="./task10_Dom2.html">back</a>
+    </form>
+
+    <script>
+        
+        button_InfoScreen.onclick = function() {
+            document.getElementById("width_permission").value = window.screen.availWidth;
+            document.getElementById("height_permission").value = window.screen.availHeight;
+            document.getElementById("width_win").value = document.body.clientWidth;
+            document.getElementById("height_win").value = document.body.clientHeight;
+        }
+    </script>
+</body>
+</html>
