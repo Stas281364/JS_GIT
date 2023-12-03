@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./StyleWATCH.css">
+    
+</head>
+<body>
+    <main>
+
+        <div class="block">
+
+            <ul>
+                <li>
+                    <img src="" alt="" id="img1" width="150px" height="300px">
+                    
+                    <h4 class="title" id="0-about-name"></h4>
+                    
+                    <div class="about">
+                        <p id="0-about-corpus"></p>
+                        <p id="0-about-belt"></p>
+                        <p id="0-about-displaySize"></p>
+                        <p id="0-about-displayType"></p>
+                        <p id="0-about-bluetooth"></p>
+                        <p id="0-about-OS"></p>
+                    </div>
+
+                    <input type="button" value="подробнее">
+                </li>
+               
+                <li>
+                    <img src="" alt="" id="img2" width="300px" height="300px">
+                    
+                    <h4 class="title" id="1-about-name"></h4>
+
+                    <div class="about">
+                        <p id="1-about-corpus"></p>
+                        <p id="1-about-belt"></p>
+                        <p id="1-about-displaySize"></p>
+                        <p id="1-about-displayType"></p>
+                        <p id="1-about-bluetooth"></p>
+                        <p id="1-about-OS"></p>
+                    </div>
+
+                    <input type="button" value="подробнее">
+                </li>
+                
+                <li>
+                    <img src="" alt="" id="img3" width="300px" height="300px">
+                    
+                    <h4 class="title" id="2-about-name"></h4>
+
+                    <div class="about">
+                        <p id="2-about-corpus"></p>
+                        <p id="2-about-belt"></p>
+                        <p id="2-about-displaySize"></p>
+                        <p id="2-about-displayType"></p>
+                        <p id="2-about-bluetooth"></p>
+                        <p id="2-about-OS"></p>
+                    </div>
+
+                    <input type="button" value="подробнее">
+                </li>
+                
+            </ul>
+
+
+        </div>
+
+    </main>
+
+    <!-- --------------- -->
+
+    <script>
+
+        let watch = [
+
+        {
+            name:  "CARRERA",
+            imgSrc: "./img/img1.webp",
+            corpus: "silver",
+            belt:   "silver",
+            displaySize:"3\"",
+            diplayType: "standart",
+            bluetooth: false,
+            OS:{
+                os0: "Механические",
+                os1: "Android 5",
+                os2: "iOS 8"
+            }
+
+        },
+
+        {
+            name:  "MIN GREY",
+            imgSrc: "./img/img2.jpg",
+            corpus: "grey",
+            belt:   "grey",
+            displaySize:"3\"",
+            diplayType: "standart",
+            bluetooth: false,
+            OS:{
+                os0: "Механические",
+                os1: "Android 5",
+                os2: "iOS 8"
+            }
+        },
+
+        {
+            name:  "SIPLE-SIPLE",
+            imgSrc: "./img/img3.jpg",
+            corpus: "white",
+            belt:   "orange",
+            displaySize:"3\"",
+            displayType: "standart",
+            bluetooth: false,
+            OS:{
+                os0: "Механические",
+                os1: "Android 5",
+                os2: "iOS 8"
+            }
+        }
+            
+        ]
+        
+        let elem = document.getElementById("img1");
+        elem.setAttribute("src", watch[0].imgSrc.toString());
+        elem = document.getElementById("img2");
+        elem.setAttribute("src", watch[1].imgSrc.toString());
+        elem = document.getElementById("img3");
+        elem.setAttribute("src", watch[2].imgSrc.toString());
+
+        for (let i = 0; i < watch.length; i++) {
+           
+            document.getElementById(`${i}-about-name`).innerHTML = watch[i].name;
+
+            // elem = document.getElementById(`${i}-about-imgSrc`);
+            // elem.setAttribute("src", watch[i].imgSrc.toString());
+
+            document.getElementById(`${i}-about-corpus`).innerHTML = "Корпус:   " + watch[i].corpus;
+            
+            document.getElementById(`${i}-about-belt`).innerHTML = "Ремень: " + watch[i].belt;
+
+            document.getElementById(`${i}-about-displaySize`).innerHTML = "Размер дисплея:  " + watch[i].displaySize;
+
+            document.getElementById(`${i}-about-displayType`).innerHTML = "Тип дисплея: " + watch[i].displayType;
+
+            let bluetoothString = watch[i].bluetooth == true ? "Есть" : "Отсутствует    ";
+            document.getElementById(`${i}-about-bluetooth`).innerHTML = `Bluetooth: ` + bluetoothString;
+            
+            document.getElementById(`${i}-about-OS`).innerHTML = "OS:   " + watch[i].OS.os0;
+        }
+
+    </script>
+
+</body>
+</html>
