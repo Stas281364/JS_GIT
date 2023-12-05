@@ -71,9 +71,13 @@
 
     </main>
 
+
+
+    <script type="module" src="./js1.js"></script>
+    <script type="module" src="./cards.js"></script>
     <!-- --------------- -->
 
-    <script>
+    <!-- <script>
 
         let watch = [
 
@@ -86,7 +90,7 @@
             diplayType: "standart",
             bluetooth: false,
             OS:{
-                os0: "Механические",
+                os0: false,
                 os1: "Android 5",
                 os2: "iOS 8"
             }
@@ -102,7 +106,7 @@
             diplayType: "standart",
             bluetooth: false,
             OS:{
-                os0: "Механические",
+                os0: false,
                 os1: "Android 5",
                 os2: "iOS 8"
             }
@@ -117,7 +121,7 @@
             displayType: "standart",
             bluetooth: false,
             OS:{
-                os0: "Механические",
+                os0: false,
                 os1: "Android 5",
                 os2: "iOS 8"
             }
@@ -139,21 +143,21 @@
             // elem = document.getElementById(`${i}-about-imgSrc`);
             // elem.setAttribute("src", watch[i].imgSrc.toString());
 
-            document.getElementById(`${i}-about-corpus`).innerHTML = "Корпус:   " + watch[i].corpus;
+            document.getElementById(`${i}-about-corpus`).innerHTML = "Корпус:" + watch[i].corpus;
             
-            document.getElementById(`${i}-about-belt`).innerHTML = "Ремень: " + watch[i].belt;
+            document.getElementById(`${i}-about-belt`).innerHTML = "Ремень:" + watch[i].belt;
 
-            document.getElementById(`${i}-about-displaySize`).innerHTML = "Размер дисплея:  " + watch[i].displaySize;
+            document.getElementById(`${i}-about-displaySize`).innerHTML = "Размер дисплея:" + watch[i].displaySize;
 
-            document.getElementById(`${i}-about-displayType`).innerHTML = "Тип дисплея: " + watch[i].displayType;
+            document.getElementById(`${i}-about-displayType`).innerHTML = "Тип дисплея:" + watch[i].displayType;
 
-            let bluetoothString = watch[i].bluetooth == true ? "Есть" : "Отсутствует    ";
+            let bluetoothString = watch[i].bluetooth == true ? "Есть" : "Отсутствует";
             document.getElementById(`${i}-about-bluetooth`).innerHTML = `Bluetooth: ` + bluetoothString;
             
-            document.getElementById(`${i}-about-OS`).innerHTML = "OS:   " + watch[i].OS.os0;
+            document.getElementById(`${i}-about-OS`).innerHTML = "OS:" + watch[i].OS.os0;
         }
 
-    </script>
+    </script> -->
 
 </body>
 </html>
